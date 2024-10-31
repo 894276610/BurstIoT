@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{48D37D9B-AF86-41EA-97E1-39E003170E5D}</ProjectGuid>
+    <RootNamespace>PcapResolution</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>PcapResolution</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>E:\E\boost_1_79_0;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\E\boost_1_79_0\stage\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\Dev\boost_1_79_0;D:\Dev\PacketRGB\PcapResolution\include\workflow_include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Dev\boost_1_79_0\stage\lib;D:\Dev\PacketRGB\workflow_lib\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>E:\E\boost_1_79_0;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\E\boost_1_79_0\stage\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\Dev\boost_1_79_0;D:\Dev\PacketRGB\PcapResolution\include;D:\Dev\PacketRGB\PcapResolution\include\third_party;D:\Dev\PacketRGB\PcapResolution\include\magic_enum;D:\Dev\PacketRGB\pcapplusplus-23.09-windows-vs2019-x64-release\include\pcapplusplus;D:\Dev\PacketRGB\PcapResolution\include\workflow_include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Dev\boost_1_79_0\stage\lib;D:\Dev\PacketRGB\pcapplusplus-23.09-windows-vs2019-x64-release\lib;D:\Dev\PacketRGB\workflow_lib\Release;D:\Dev\PacketRGB\libssl;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>DEBUG_HERE;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Dev\PacketRGB\npcap-sdk-1.13\Include;$(ProjectDir)include;$(SolutionDir)PcapPlusPlus-23.09\build-debug\include\pcapplusplus;$(ProjectDir)include\magic_enum;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)PcapPlusPlus-23.09\build-debug\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(SolutionDir)PcapPlusPlus-23.09\build-debug\lib\Packet++.lib;$(SolutionDir)PcapPlusPlus-23.09\build-debug\lib\Pcap++.lib;$(SolutionDir)PcapPlusPlus-23.09\build-debug\lib\Common++.lib;$(SolutionDir)WpdPack\Lib\wpcap.lib;$(SolutionDir)WpdPack\Lib\Packet.lib;$(SolutionDir)WpdPack\Lib\libwpcap.a;$(SolutionDir)WpdPack\Lib\libpacket.a;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>workflow.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;NOMINMAX;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)PcapPlusPlus-23.09\build-ppp\include\pcapplusplus;D:\Dev\PacketRGB\npcap-sdk-1.13\Include;$(ProjectDir)include;$(ProjectDir)include\magic_enum;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)PcapPlusPlus-23.09\build-ppp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(SolutionDir)PcapPlusPlus-23.09\build-ppp\lib\Packet++.lib;$(SolutionDir)PcapPlusPlus-23.09\build-ppp\lib\Pcap++.lib;$(SolutionDir)PcapPlusPlus-23.09\build-ppp\lib\Common++.lib;$(SolutionDir)WpdPack\Lib\wpcap.lib;$(SolutionDir)WpdPack\Lib\Packet.lib;$(SolutionDir)WpdPack\Lib\libwpcap.a;$(SolutionDir)WpdPack\Lib\libpacket.a;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <LargeAddressAware>true</LargeAddressAware>
+      <HeapCommitSize>
+      </HeapCommitSize>
+      <StackReserveSize>200</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NOMINMAX;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>D:\Dev\PacketRGB\npcap-sdk-1.13\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <AdditionalDependencies>Packet++.lib;Common++.lib;Pcap++.lib;libcrypto.lib;libssl.lib;$(SolutionDir)WpdPack\Lib\x64\wpcap.lib;$(SolutionDir)WpdPack\Lib\x64\Packet.lib;$(SolutionDir)WpdPack\Lib\libwpcap.a;$(SolutionDir)WpdPack\Lib\libpacket.a;ws2_32.lib;workflow.lib;Mswsock.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>
+      </StackReserveSize>
+      <StackCommitSize>
+      </StackCommitSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Burst.cpp" />
+    <ClCompile Include="src\BurstDataset.cpp" />
+    <ClCompile Include="src\BurstGroupPolicycpp.cpp" />
+    <ClCompile Include="src\DatasetInfo.cpp" />
+    <ClCompile Include="src\DeviceBurstGenerator.cpp" />
+    <ClCompile Include="src\Utils.cpp" />
+    <ClCompile Include="src\Context.cpp" />
+    <ClCompile Include="src\IoTBurst.cpp" />
+    <ClCompile Include="src\KBurstClassifier.cpp" />
+    <ClCompile Include="src\Logger.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Score.cpp" />
+    <ClCompile Include="src\Reorganizer.cpp" />
+    <ClCompile Include="include\Timer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\BurstDataset.h" />
+    <ClInclude Include="include\boostSerial\boostSerialize.h" />
+    <ClInclude Include="include\BurstCache.h" />
+    <ClInclude Include="include\Burst.h" />
+    <ClInclude Include="include\AConfig.h" />
+    <ClInclude Include="include\BurstGroupPolicy.h" />
+    <ClInclude Include="include\Combiner.h" />
+    <ClInclude Include="include\DatasetInfo.h" />
+    <ClInclude Include="include\Context.h" />
+    <ClInclude Include="include\DeviceBurstGenerator.h" />
+    <ClInclude Include="include\IoTBurst.h" />
+    <ClInclude Include="include\KBurstClassifier.h" />
+    <ClInclude Include="include\KDevice.h" />
+    <ClInclude Include="include\KException.h" />
+    <ClInclude Include="include\pcppUsed\pcppCommon.h" />
+    <ClInclude Include="include\Reorganizer.h" />
+    <ClInclude Include="include\Score.h" />
+    <ClInclude Include="include\tqdm\tqdm.h" />
+    <ClInclude Include="include\Utils.h" />
+    <ClInclude Include="include\Klog.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

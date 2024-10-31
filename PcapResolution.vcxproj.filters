@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Timer.h" />
+    <ClCompile Include="src\Logger.cpp" />
+    <ClCompile Include="src\IoTBurst.cpp" />
+    <ClCompile Include="src\Context.cpp" />
+    <ClCompile Include="src\Reorganizer.cpp" />
+    <ClCompile Include="src\KBurstClassifier.cpp" />
+    <ClCompile Include="src\Score.cpp" />
+    <ClCompile Include="src\Utils.cpp" />
+    <ClCompile Include="src\DeviceBurstGenerator.cpp" />
+    <ClCompile Include="src\BurstDataset.cpp" />
+    <ClCompile Include="src\Burst.cpp" />
+    <ClCompile Include="src\BurstGroupPolicycpp.cpp" />
+    <ClCompile Include="src\DatasetInfo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Klog.h" />
+    <ClInclude Include="include\Context.h" />
+    <ClInclude Include="include\KException.h" />
+    <ClInclude Include="include\IoTBurst.h" />
+    <ClInclude Include="include\Reorganizer.h" />
+    <ClInclude Include="include\KBurstClassifier.h" />
+    <ClInclude Include="include\Score.h" />
+    <ClInclude Include="include\Utils.h" />
+    <ClInclude Include="include\DeviceBurstGenerator.h" />
+    <ClInclude Include="include\BurstCache.h" />
+    <ClInclude Include="include\BurstDataset.h" />
+    <ClInclude Include="include\AConfig.h" />
+    <ClInclude Include="include\KDevice.h" />
+    <ClInclude Include="include\Burst.h" />
+    <ClInclude Include="include\BurstGroupPolicy.h" />
+    <ClInclude Include="include\tqdm\tqdm.h" />
+    <ClInclude Include="include\DatasetInfo.h" />
+    <ClInclude Include="include\Combiner.h" />
+    <ClInclude Include="include\boostSerial\boostSerialize.h" />
+    <ClInclude Include="include\pcppUsed\pcppCommon.h" />
+  </ItemGroup>
+</Project>
